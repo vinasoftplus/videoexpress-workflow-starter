@@ -1,4 +1,19 @@
-# VideoExpress Narrated Story Agent
+# VideoExpress Workflow Starter
+
+This is your personal fork of [ai-playbooks/videoexpress-stickman-story-agent](https://github.com/ai-playbooks/videoexpress-stickman-story-agent). The inherited prompt and examples describe one specific narrated stickman-story workflow; treat them as a reference implementation, not as requirements for your own workflow.
+
+## Build your workflow
+
+1. Fill in [WORKFLOW_PROFILE.md](WORKFLOW_PROFILE.md) with your tools, inputs, output, preferences, and boundaries.
+2. Edit [SYSTEM_PROMPT.md](SYSTEM_PROMPT.md) to implement those choices. Remove inherited rules that do not apply, and keep the README and acceptance checklist consistent.
+3. Replace or add examples under `examples/` that demonstrate your real workflow.
+4. Run through the acceptance checklist in `evals/acceptance-checklist.md` using a representative request.
+
+The profile is a planning worksheet; it does not change the agent behavior until you apply it to `SYSTEM_PROMPT.md`. If you share the workflow you want to build, this fork can be tailored further.
+
+---
+
+## Inherited workflow reference
 
 Choose a fresh protagonist name for each new story rather than automatically reusing Milo. Keep the name and dedicated character master consistent throughout that story. Every additional human character, including background people, must also be a 2D stickman. Keep recurring supporting stickmen visually distinct and consistent; reject realistic people or mixed character styles.
 
